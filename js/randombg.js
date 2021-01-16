@@ -1,5 +1,5 @@
 //随机banner数组,图片可以换成图床链接，注意最后一条后面不要有逗号
-let bannerimg =[
+var bannerimg =[
     "url(https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/banner-images/AugustStargazing_ZH-CN9929724138_1920x1080.jpg)",
     "url(https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/banner-images/ColoradoColumbine_ZH-CN0901580141_1920x1080.jpg)",
     "url(https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/banner-images/jhk-1609480907329.jpg)",
@@ -16,6 +16,6 @@ let bannerimg =[
     "url(https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/banner-images/VirginiaDeer.jpg)",
   ];
   //获取banner图片总数，生成随机数
-  let bannerindex =Math.ceil(Math.random() * (bannerimg.length-1));
+  var bannerindex =Math.ceil(Math.random() * (bannerimg.length-1));
   //重设banner图片
   document.getElementById("page-header").style.backgroundImage = bannerimg[bannerindex];
